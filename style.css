@@ -1,6 +1,7 @@
-html, body {
+html {
     margin: auto;
     align-items: center;
+    background: -webkit-linear-gradient(bottom, gold, whitesmoke);
 }
 #ball {
     position: absolute;
@@ -11,34 +12,39 @@ html, body {
     top: 0px;
     left: 0px;
 }
+#space {
+    height: 95vh;
+    /* width: 90vw; */
+    /* margin: auto; */
+}
 img {
-    display: block;
+    height: 100%;
+    width: 100%;
     margin: auto;
-    width: 58%;
-    max-height: 95vh;
     object-fit: contain;
+    display: block;
 }
 #earring {
     position: absolute;
-    top: 45%;
-    left: 52%;
+    top: 53%;
+    right: 43%;
+    width: 4%;
+    max-width: 20px;
+    height: 7%;
 }
 #earring i:nth-child(1) {
     position: absolute;
     background-color: rgb(220, 166, 50);
-    width: 20px;
-    height: 20px;
+    width: 100%;
+    height: 30%;
     border-radius: 100%;
-    top: 20px;
-    left: 50px;
 }
 #earring i:nth-child(2) {
     position: absolute;
     background-color: rgb(220, 166, 50);
-    width: 20px;
-    height: 50px;
+    width: 100%;
+    height: 70%;
+    top: 30%;
     border-radius: 100% 100% 80% 80%;
-    top: 40px;
-    left: 50px;
     transform-origin: center top;
 }
