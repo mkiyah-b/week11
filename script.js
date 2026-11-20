@@ -7,21 +7,21 @@ acl.addEventListener("reading", () => {
   if (acl.y < 0) {
     ball.style.top = 0;
   }
-  else if ((acl.y * 50) > window.innerHeight) {
+  else if ((acl.y * (window.innerHeight/10)) > window.innerHeight) {
     ball.style.bottom = 0;
   }
   else {
-    ball.style.top = (acl.y * 50) + 'px';
+    ball.style.top = (acl.y * (window.innerHeight/10)) + 'px';
   }
-  
+
   if (acl.x < 0) {
     ball.style.left = 0;
   }
-  else if ((acl.x * 50) > window.innerWidth) {
+  else if ((acl.x * (window.innerWidth/10)) > window.innerWidth) {
     ball.style.right = 0;
   }
   else {
-    ball.style.left = (acl.x * 50) + 'px';
+    ball.style.left = (acl.x * (window.innerWidth/10)) + 'px';
   }
   
 });
