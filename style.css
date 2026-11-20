@@ -1,5 +1,6 @@
-html {
-    margin: 10px;
+html, body {
+    margin: auto;
+    align-items: center;
 }
 #ball {
     position: absolute;
@@ -9,4 +10,35 @@ html {
     border-radius: 100%;
     top: 0px;
     left: 0px;
+}
+img {
+    display: block;
+    margin: auto;
+    width: 58%;
+    max-height: 95vh;
+    object-fit: contain;
+}
+#earring {
+    position: absolute;
+    top: 45%;
+    left: 52%;
+}
+#earring i:nth-child(1) {
+    position: absolute;
+    background-color: rgb(220, 166, 50);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    top: 20px;
+    left: 50px;
+}
+#earring i:nth-child(2) {
+    position: absolute;
+    background-color: rgb(220, 166, 50);
+    width: 20px;
+    height: 50px;
+    border-radius: 100% 100% 80% 80%;
+    top: 40px;
+    left: 50px;
+    transform-origin: center top;
 }
