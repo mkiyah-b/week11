@@ -1,8 +1,10 @@
-html {
+html, body {
     margin: auto;
     align-items: center;
+    justify-content: center;
     background: -webkit-linear-gradient(bottom, gold, whitesmoke);
 }
+
 #ball {
     position: absolute;
     background-color: blue;
@@ -14,6 +16,10 @@ html {
 }
 #space {
     height: 95vh;
+    padding: 0px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
     /* width: 90vw; */
     /* margin: auto; */
 }
@@ -24,10 +30,12 @@ img {
     object-fit: contain;
     display: block;
 }
+
 #earring {
     position: absolute;
     top: 53%;
     right: 43%;
+    left: 55%;
     width: 4%;
     max-width: 20px;
     height: 7%;
@@ -47,4 +55,11 @@ img {
     top: 30%;
     border-radius: 100% 100% 80% 80%;
     transform-origin: center top;
+}
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 0px;
 }
